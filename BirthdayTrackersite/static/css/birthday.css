@@ -1,12 +1,20 @@
-@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+@font-face {
+font-family: "yekan";
+src: url(fonts/Yekan.eot);
+src: url(fonts/Yekan.eot?#iefix) format("embedded-opentype"), url(fonts/Yekan.woff)
+format("woff"), url(fonts/Yekan.ttf) format("truetype"), url(fonts/Yekan.svg#BYekan) format("svg");
+font-weight: normal;
+font-style: normal
+}
+
 
 body{
 	margin: 0;
 	padding: 0;
 	background: #fff;
 	color: #fff;
-	font-family: Arial;
+	font-family: yekan;
 	font-size: 12px;
 }
 
@@ -29,12 +37,12 @@ body{
 	top: calc(50% - 35px);
 	left: calc(50% - 255px);
 	z-index: 2;
-	margin-left:400px;
+	margin-left:550px;
 }
 
 .header div{
 	color: #fff;
-	font-family: 'Exo', sans-serif;
+	font-family: yekan;
 	font-size: 40px;
 	font-weight: bold;
     position: relative;
@@ -64,7 +72,7 @@ body{
 	border: 1px solid rgba(254,253,0,1);
 	border-radius: 2px;
 	color: #FFFF00;
-	font-family: 'Exo', sans-serif;
+	font-family: yekan;
 	font-size: 16px;
 	font-weight: 400;
 	padding: 4px;
@@ -81,12 +89,38 @@ body{
 	border: 1px solid rgba(254,253,0,1);
 	border-radius: 2px;
 	color: #FFFF00;
-	font-family: 'Exo', sans-serif;
+	font-family: yekan;
 	font-size: 16px;
 	font-weight: 400;
 	padding: 4px;
 	margin-top: 10px;
 	margin-left: 500px;
+}
+.login select option {
+  margin: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.login select option[value="1"] {
+  /* value not val */
+  background: rgba(159, 79, 109, 1);
+}
+
+.login select option[value="2"] {
+  /* value not val */
+  background: rgba(56, 133, 100, 1);
+}
+
+.login select option[value="3"] {
+  /* value not val */
+  background: rgba(202, 138, 47, 1);
+}
+
+.login select option[value="4"] {
+  /* value not val */
+  background: rgba(111, 99, 106, 1);
 }
 
 #button{
@@ -96,8 +130,8 @@ body{
 	border: 1px solid #fff;
 	cursor: pointer;
 	border-radius: 2px;
-	color: #a18d6c;
-	font-family: 'Exo', sans-serif;
+	color: #6a5acd;
+	font-family: yekan;
 	font-size: 16px;
 	font-weight: 400;
 	padding: 6px;

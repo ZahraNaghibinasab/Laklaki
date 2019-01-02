@@ -7,30 +7,32 @@
     <title>Birthday Tracker</title>
 </head>
 <body>
+<h1>سولام</h1>
 <div class="body"></div>
         <div class="header">
-			<div>Birthday<span>Tracker</span></div>
+			<div>اتفاقات    <span>زادروز   </span></div>
 		</div>
 		<div class="login">
 			<form action="success/" method="post">
 				{% csrf_token %}
-				<input type="text" placeholder="Day" name="day"><br>
+				<input type="text" placeholder="روز" name="day"><br>
                  <select>
-                      <option value="January">January</option>
-                      <option value="February">February</option>
-                      <option value="March">March</option>
-                      <option value="April">April</option>
-                       <option value="May">May</option>
-                      <option value="June">June</option>
-                      <option value="July">July</option>
-                      <option value="August">August</option>
-                       <option value="September">September</option>
-                      <option value="October">October</option>
-                      <option value="November">November</option>
-                      <option value="Decmber">Decmber</option>
+                     <option value="">ماه</option>
+                      <option value="1">فروردین</option>
+                      <option value="1">اردیبهشت</option>
+                      <option value="1">خرداد</option>
+                      <option value="2">تیر</option>
+                       <option value="2">مرداد</option>
+                      <option value="2">شهریور</option>
+                      <option value="3">مهر</option>
+                      <option value="3">آبان</option>
+                       <option value="3">آذر</option>
+                      <option value="4">دی</option>
+                      <option value="4">بهمن</option>
+                      <option value="4">اسفند</option>
                  </select>
-                <input type="text" placeholder="Year" name="year"><br>
-                <input type="submit" value="Submit" id="button"><br>
+                <input type="text" placeholder="سال" name="year"><br>
+                <input type="submit" value="مشاهده" id="button"><br>
 
 			</form>
 		</div>
