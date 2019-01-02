@@ -4,33 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{% static 'css/birthday.css' %}">
-        <title>Birthday Tracker</title>
+    <title>Birthday Tracker</title>
 </head>
-
 <body>
-<p>hi</p>
-<div class="select">
-    <span class="arr"></span>
-    <select>
-        				<input type="text" placeholder="username" name="name"><br>
+<div class="body"></div>
+        <div class="header">
+			<div>Birthday<span>Tracker</span></div>
+		</div>
+		<div class="login">
+			<form action="success/" method="post">
+				{% csrf_token %}
+				<input type="text" placeholder="Day" name="day"><br>
+                 <select>
+                      <option value="January">January</option>
+                      <option value="February">February</option>
+                      <option value="March">March</option>
+                      <option value="April">April</option>
+                       <option value="May">May</option>
+                      <option value="June">June</option>
+                      <option value="July">July</option>
+                      <option value="August">August</option>
+                       <option value="September">September</option>
+                      <option value="October">October</option>
+                      <option value="November">November</option>
+                      <option value="Decmber">Decmber</option>
+                 </select>
+                <input type="text" placeholder="Year" name="year"><br>
+                <input type="submit" value="Submit" id="button"><br>
 
-      <option>day1</option>
-      <option>day2</option>
-      <option>day3</option>
-    </select>
-    <select>
-      <option>month1</option>
-      <option>month2</option>
-      <option>month3</option>
-    </select>
-    <select>
-      <option>year1</option>
-      <option>year2</option>
-      <option>year3</option>
-    </select>
-  </div>
-
+			</form>
+		</div>
 </body>
-
-
 </html>

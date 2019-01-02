@@ -1,3 +1,135 @@
-p{
-	font-size: 106px;
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	color: #fff;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.body{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: auto;
+	height:100%;
+	background-image:url("1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+.header{
+	position: absolute;
+	top: calc(50% - 35px);
+	left: calc(50% - 255px);
+	z-index: 2;
+	margin-left:400px;
+}
+
+.header div{
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+    position: relative;
+    right: 460px;
+}
+
+.header div span{
+	color: #FFFF00 !important;
+}
+
+.login{
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(25% - 50px);
+	height: 150px;
+	width: 150px;
+	padding: 10px;
+	z-index: 2;
+}
+
+
+
+.login input{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(254,253,0,1);
+	border-radius: 2px;
+	color: #FFFF00;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+	margin-left: 500px;
+
+
+}
+
+.login select{
+	width: 261px;
+	height: 37px;
+	background: transparent;
+	border: 1px solid rgba(254,253,0,1);
+	border-radius: 2px;
+	color: #FFFF00;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+	margin-left: 500px;
+}
+
+#button{
+	width: 260px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+#button:hover{
+	opacity: 0.8;
+}
+
+#button:active{
+	opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+#button:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+#button:focus{
+	outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
 }
