@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'BirthdayTrackerWebPage.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '‌hospitalman',
+        'NAME': 'birthday',
         'USER': 'root',
         'HOST': '127.0.0.1',
         'PORT': '3306'

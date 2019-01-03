@@ -4,20 +4,29 @@ from django.utils import timezone
 
 # Create your models here.
 
+
 class Events(models.Model):
     day = models.IntegerField()
-    month =models.IntegerField()
+    month = models.IntegerField()
     year = models.IntegerField()
-    event = models.TextField(max_length=200)
+    event = models.TextField()
+
 
 class Birth(models.Model):
     day = models.IntegerField()
-    month =models.IntegerField()
+    month = models.IntegerField()
     year = models.IntegerField()
-    event = models.TextField(max_length=200)
+    event = models.TextField()
+
 
 class Death(models.Model):
     day = models.IntegerField()
-    month =models.IntegerField()
+    month = models.IntegerField()
     year = models.IntegerField()
-    event = models.TextField(max_length=200)
+    event = models.TextField()
+
+
+class Whole(models.Model):
+    day = models.IntegerField()
+    month = models.IntegerField()
+    detail = models.TextField()
