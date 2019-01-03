@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/event.css' %}">
+    <title>رویدادها</title>
+</head>
+<body>
+<div class="body"></div>
+<div class="login">
+
+{% for eachwhole in whole %}
+    <div>
+        <h1 class="rtl">رویدادها</h1>
+        <p class="rtl">{{ eachwhole.event }}</p>
+        <h1 class="rtl">زادروزها</h1>
+        <p class="rtl">{{ eachwhole.birth }}</p>
+        <h1 class="rtl">درگذشت ها</h1>
+        <p class="rtl">{{ eachwhole.death }}</p>
+
+    </div>
+    </div>
+{% endfor %}
+
+</body>
+</html>

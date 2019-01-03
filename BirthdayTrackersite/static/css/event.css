@@ -1,0 +1,66 @@
+
+@font-face {
+font-family: "yekan";
+src: url(fonts/Yekan.eot);
+src: url(fonts/Yekan.eot?#iefix) format("embedded-opentype"), url(fonts/Yekan.woff)
+format("woff"), url(fonts/Yekan.ttf) format("truetype"), url(fonts/Yekan.svg#BYekan) format("svg");
+font-weight: normal;
+font-style: normal
+}
+
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	color: #fff;
+	font-family: yekan;
+	font-size: 12px;
+}
+
+.body{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: auto;
+	height:100%;
+	background-image:url("1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+.login{
+	position: absolute;
+	top: calc(50% - 250px);
+	right: calc(25% - 100px);
+	height: 1500px;
+	width: 1500px;
+	padding: 10px;
+	z-index: 2;
+
+}
+.login h1{
+	color: FFA500;
+	font-family: yekan;
+	font-size: 29px;
+	font-weight: bold;
+}
+.login p{
+	color: #FFFF00;
+	font-family: yekan;
+	font-size: 24px;
+	font-weight: 10000;
+}
+
+.login p.rtl{
+    direction: rtl;
+}
+
+
+.login h1.rtl{
+    direction: rtl;
+}
+

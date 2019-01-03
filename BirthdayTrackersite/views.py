@@ -22,5 +22,5 @@ def success(request):
         if form.is_valid():
             whole = Whole.objects.filter(day=form.cleaned_data['day'],month=form.cleaned_data['month'])
             print(whole.values('event'))
-    return HttpResponse("Success!")
+    return render(request, 'BirthdayTrackersite/event.html', {'whole': whole})
 
