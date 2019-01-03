@@ -16,21 +16,21 @@
 			<form action="success/" method="post">
 				{% csrf_token %}
 				<input type="text" placeholder="روز" name="day"><br>
-                 <select>
-                     <option value="">ماه</option>
+                <select name="month">
+                      <option value="">ماه</option>
                       <option value="1">فروردین</option>
-                      <option value="1">اردیبهشت</option>
-                      <option value="1">خرداد</option>
-                      <option value="2">تیر</option>
-                       <option value="2">مرداد</option>
-                      <option value="2">شهریور</option>
-                      <option value="3">مهر</option>
-                      <option value="3">آبان</option>
-                       <option value="3">آذر</option>
-                      <option value="4">دی</option>
-                      <option value="4">بهمن</option>
-                      <option value="4">اسفند</option>
-                 </select>
+                      <option value="2">اردیبهشت</option>
+                      <option value="3">خرداد</option>
+                      <option value="4">تیر</option>
+                      <option value="5">مرداد</option>
+                      <option value="6">شهریور</option>
+                      <option value="7">مهر</option>
+                      <option value="8">آبان</option>
+                      <option value="9">آذر</option>
+                      <option value="10">دی</option>
+                      <option value="11">بهمن</option>
+                      <option value="12">اسفند</option>
+                </select>
                 <input type="text" placeholder="سال" name="year"><br>
                 <input type="submit" value="مشاهده" id="button"><br>
 

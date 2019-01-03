@@ -29,4 +29,6 @@ class Death(models.Model):
 class Whole(models.Model):
     day = models.IntegerField()
     month = models.IntegerField()
-    detail = models.TextField()
+    event = models.TextField()
+    birth = models.TextField()
+    death = models.TextField()
