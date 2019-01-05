@@ -37,7 +37,7 @@ body{
 	bottom: 0px;
 	width: auto;
 	height:100%;
-	background-image:url("1.jpg");
+	background-image:url("6.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -54,13 +54,13 @@ body{
 
 }
 .login h1{
-	color: FFA500;
+	color: #ee2c68;
 	font-family: Vazir;
 	font-size: 29px;
 	font-weight: bold;
 }
 .login p{
-	color: #FFFF00;
+	color: #2a848e;
 	font-family: Vazir;
 	font-size: 24px;
 	font-weight: 10000;
