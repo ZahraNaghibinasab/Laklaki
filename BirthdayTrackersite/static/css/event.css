@@ -8,6 +8,17 @@ font-weight: normal;
 font-style: normal
 }
 
+@font-face {
+    font-family:'Vazir';
+    src:url('fonts/Vazir.eot');
+    src:url('fonts/Vazir.eot#iefix') format('embedded-opentype'),
+        url('fonts/Vazir.woff') format('woff'),
+        url('fonts/Vazir.woff2') format('woff2'),
+        url('fonts/Vazir.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
 
 body{
 	margin: 0;
@@ -37,20 +48,20 @@ body{
 	top: calc(50% - 250px);
 	right: calc(25% - 100px);
 	height: 1500px;
-	width: 1500px;
+	width: 600px;
 	padding: 10px;
 	z-index: 2;
 
 }
 .login h1{
 	color: FFA500;
-	font-family: yekan;
+	font-family: Vazir;
 	font-size: 29px;
 	font-weight: bold;
 }
 .login p{
 	color: #FFFF00;
-	font-family: yekan;
+	font-family: Vazir;
 	font-size: 24px;
 	font-weight: 10000;
 }

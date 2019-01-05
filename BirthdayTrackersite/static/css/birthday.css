@@ -8,6 +8,16 @@ font-weight: normal;
 font-style: normal
 }
 
+@font-face {
+    font-family:'Vazir';
+    src:url('fonts/Vazir.eot');
+    src:url('fonts/Vazir.eot#iefix') format('embedded-opentype'),
+        url('fonts/Vazir.woff') format('woff'),
+        url('fonts/Vazir.woff2') format('woff2'),
+        url('fonts/Vazir.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
 
 body{
 	margin: 0;
@@ -26,7 +36,7 @@ body{
 	bottom: 0px;
 	width: auto;
 	height:100%;
-	background-image:url("1.jpg");
+	background-image:url("5.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -41,8 +51,8 @@ body{
 }
 
 .header div{
-	color: #fff;
-	font-family: yekan;
+	color: #f5a056;
+	font-family: Vazir;
 	font-size: 40px;
 	font-weight: bold;
     position: relative;
@@ -50,13 +60,13 @@ body{
 }
 
 .header div span{
-	color: #FFFF00 !important;
+	color: #42a1f4 !important;
 }
 
 .login{
 	position: absolute;
-	top: calc(50% - 75px);
-	left: calc(25% - 50px);
+	top: calc(50% - 120px);
+	left: calc(25% - 30px);
 	height: 150px;
 	width: 150px;
 	padding: 10px;
@@ -65,13 +75,13 @@ body{
 
 
 
-.login div input{
+.login input{
 	width: 250px;
 	height: 30px;
 	background: transparent;
-	border: 1px solid rgba(254,253,0,1);
+	border: 1px solid #f69e9f;
 	border-radius: 2px;
-	color: #FFFF00;
+	color: #f69e9f;
 	font-family: yekan;
 	font-size: 16px;
 	font-weight: 400;
@@ -86,9 +96,9 @@ body{
 	width: 261px;
 	height: 37px;
 	background: transparent;
-	border: 1px solid rgba(254,253,0,1);
+	border: 1px solid #f69e9f;
 	border-radius: 2px;
-	color: #FFFF00;
+	color: #f69e9f;
 	font-family: yekan;
 	font-size: 16px;
 	font-weight: 400;
@@ -99,38 +109,67 @@ body{
 .login select option {
   margin: 40px;
   background: rgba(0, 0, 0, 0.3);
-  color: #fff;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  color: #000000;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .login select option[value="1"] {
-  /* value not val */
-  background: rgba(159, 79, 109, 1);
+  background: #42a1f4;
 }
 
 .login select option[value="2"] {
-  /* value not val */
-  background: rgba(56, 133, 100, 1);
+  background: #41b2f4;
 }
 
 .login select option[value="3"] {
-  /* value not val */
-  background: rgba(202, 138, 47, 1);
+  background: #41c1f4;
 }
 
 .login select option[value="4"] {
   /* value not val */
-  background: rgba(111, 99, 106, 1);
+  background: #41cdf4;
+}
+
+.login select option[value="5"] {
+  background: #41dff4;
+}
+
+.login select option[value="6"] {
+  background: #41eef4;
+}
+
+.login select option[value="7"] {
+  background: #41f4eb;
+}
+
+.login select option[value="8"] {
+  background: #41f4dc;
+}
+
+.login select option[value="9"] {
+  background: #41f4d0;
+}
+
+.login select option[value="10"] {
+  background: #41f4d0;
+}
+
+.login select option[value="11"] {
+  background: #41f4c4;
+}
+
+.login select option[value="12"] {
+  background: #41f4b8;
 }
 
 #button{
 	width: 260px;
 	height: 35px;
-	background: #fff;
-	border: 1px solid #fff;
+	background: #42a1f4;
+	border: 1px solid #42a1f4;
 	cursor: pointer;
 	border-radius: 2px;
-	color: #6a5acd;
+	color: #ffff;
 	font-family: yekan;
 	font-size: 16px;
 	font-weight: 400;
@@ -148,7 +187,12 @@ body{
 
 .login input[type=text]:focus{
 	outline: none;
-	border: 1px solid rgba(255,255,255,0.9);
+	border: 1px solid #42a1f4;
+}
+
+.login select:focus{
+	outline: none;
+	border: 1px solid #42a1f4;
 }
 
 #button:focus{
