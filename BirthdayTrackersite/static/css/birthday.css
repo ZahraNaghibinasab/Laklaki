@@ -48,15 +48,19 @@ body{
 	left: calc(50% - 800px);
 	z-index: 2;
 	margin-left:550px;
+	width: 230px;
+
+
 }
 
 .explain p{
-    color: #f5a056;
+    color: #f38b25;
 	font-family: Vazir;
 	font-size: 15px;
 	font-weight: bold;
     position: relative;
     right: 460px;
+    weight: 60px;
 }
 .explain p.rtl{
     direction: rtl;
@@ -64,14 +68,14 @@ body{
 
 .header{
 	position: absolute;
-	top: calc(50% - 35px);
-	left: calc(50% - 255px);
+	top: calc(50% - 50px);
+	left: calc(50% - 290px);
 	z-index: 2;
 	margin-left:550px;
 }
 
 .header div{
-	color: #f5a056;
+	color: #f38b25;
 	font-family: Vazir;
 	font-size: 40px;
 	font-weight: bold;
