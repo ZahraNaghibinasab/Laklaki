@@ -31,7 +31,7 @@ body{
 
 .body{
 	position: absolute;
-	top: 0px;
+	top: 190px;
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
@@ -75,3 +75,23 @@ body{
     direction: rtl;
 }
 
+.explain{
+    position: absolute;
+	top: calc(50% - 200px);
+	left: calc(50% - 800px);
+	z-index: 2;
+	margin-left:550px;
+}
+
+.explain p{
+    color:#ee2c68;
+	font-family: Vazir;
+	font-size: 20px;
+	font-weight: bold;
+    position: relative;
+    right: 460px;
+}
+
+.explain p.rtl{
+    direction: rtl;
+}
