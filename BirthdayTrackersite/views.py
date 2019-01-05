@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Whole
+from .models import Months
 from .forms import UserForm
 from django.shortcuts import redirect
 from django.http import HttpResponse
@@ -21,6 +22,8 @@ def success(request):
         form = UserForm(request.POST)
         if form.is_valid():
             whole = Whole.objects.filter(day=form.cleaned_data['day'],month=form.cleaned_data['month'])
-            print(whole.values('event'))
-    return render(request, 'BirthdayTrackersite/event.html', {'whole': whole})
+            month = Months.objects.filter(id=form.cleaned_data['month'])
+            print(whole)
+            print(month[0].symbol)
+    return render(request, 'BirthdayTrackersite/event.html', {'whole': whole , 'monthsymbol': month[0].symbol , 'monthplanet': month[0].planet , 'monthcolor': month[0].color , 'monthrock': month[0].rock , 'monthchance':month[0].chanceDay})
 

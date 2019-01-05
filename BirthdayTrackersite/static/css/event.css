@@ -77,8 +77,8 @@ body{
 
 .explain{
     position: absolute;
-	top: calc(50% - 200px);
-	left: calc(50% - 800px);
+	top: calc(50% - 220px);
+	left: calc(50% - 700px);
 	z-index: 2;
 	margin-left:550px;
 }
@@ -95,3 +95,5 @@ body{
 .explain p.rtl{
     direction: rtl;
 }
+
+
