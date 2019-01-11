@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static 'css/birthday.css' %}">
-    <title>Birthday Tracker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="{% static 'css/birthday.css' %}">
 </head>
-<body>
-<div class="body"></div>
-        <div class="explain">
-            <p class="rtl">در مورد روز تولدتان بیشتر بدانید..</p>
-            <p class="rtl"> به سادگی تاریخ تولد خود را وارد کنید </p>
-            <p class="rtl">و حقایق هیجان انگیز و سرگرم کننده در مورد تاریخ تولدتان را بخوانید</p>
+<body style="font-family:Verdana;color:#aaaaaa;">
 
-        </div>
-        <div class="header">
-			<div>زادروز نگار   <span>لکلکی   </span></div>
-		</div>
-		<div class="login">
-			<form action="success/" method="post">
+<div class="up">
+  <div>زادروز نگار   <span style="font-famiy:Vazir;">لکلکی   </span></div>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+      <img src="3.png">
+      <p class="rtl">در مورد روز تولدتان بیشتر بدانید</p>
+      <p class="rtl"> به سادگی تاریخ تولد خود را وارد کنید </p>
+      <p class="rtl">و حقایق هیجان انگیز و سرگرم کننده در مورد تاریخ تولدتان را بخوانید</p>
+  </div>
+
+  <div class="main">
+	<form action="success/" method="post">
 				{% csrf_token %}
 				<input type="text" placeholder="روز" name="day"><br>
                 <select name="month">
@@ -40,6 +42,7 @@
                 <input type="submit" value="مشاهده" id="button"><br>
 
 			</form>
-		</div>
+  </div>
+</div>
 </body>
 </html>
